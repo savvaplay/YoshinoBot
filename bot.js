@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client;
 const serverStats = {
-  guildID: '604946569963241482',
-  memberCountID: '605066668665995275',
-  voiceStatsID: '603639789090242571'
+  guildID: '',
+  memberCountID: '',
+  voiceStatsID: ''
 };
 const fs = require("fs");
 const ms = require("ms");
@@ -27,9 +27,9 @@ client.uploader = new Uploader(client);
 
 
 client.on('ready', () => {
-  console.log('Савва, я долбаёб!');
+  console.log('Go!');
   client.user.setStatus('idle');
-  client.user.setGame('BETA 0.0.5');
+  client.user.setGame('BETA 0.0.1');
 
   client.uploader.loadCommands();
 });
